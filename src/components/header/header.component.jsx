@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import userReducer from "../../redux/user/user.reducer";
 
 import { auth } from "../../firebase/firebase.utils";
 
@@ -32,4 +34,16 @@ const Header = ({ currentUser }) => (
   </div>
 );
 
-export default Header;
+// const mapStateToProps = (state) => ({
+//   currentUser: state.user.currentUser,
+// });
+
+const mapStateToProps = (state, userReducer) => {
+  // const { userReducer } = state;
+  return {
+    // currentUser: `${state.user.currentUser || userReducer.currentUser}`,
+    currentUser: state.user.currentUser,
+  };
+};
+
+export default connect(mapStateToProps)(Header);
