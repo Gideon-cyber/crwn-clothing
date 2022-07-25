@@ -45,5 +45,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "E-commerce website for clothing and fashion",
+  "main": "index.js",
+  "repository": "https://github.com/Gideon-cyber/crwn-clothing.git",
+  "author": "Gideon Nwokpor",
+  "license": "MIT"
 }
