@@ -52,3 +52,20 @@
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  .collection-item {
+    width: 40vw;
+    margin-bottom: 20px;
+
+    &:hover {
+      .image {
+        opacity: unset;
+      }
+
+      .custom-button {
+        opacity: unset;
+      }
+    }
+  }
+}

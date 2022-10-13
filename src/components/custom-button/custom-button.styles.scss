@@ -44,3 +44,10 @@
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  .custom-button {
+    min-width: unset;
+    padding: 0 20px 0 20px;
+  }
+}
